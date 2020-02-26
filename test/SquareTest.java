@@ -8,12 +8,17 @@ class SquareTest {
 
     private int a;
     private int b;
-   private Square square;
+    private Square square = new Square();
+
+    private int[] aTester = new int [5];
+
 
     @BeforeEach
     void setUp() {
         a = 2;
         b = 6;
+        aTester = square.racine(a,b);
+
     }
 
     @AfterEach
@@ -23,13 +28,16 @@ class SquareTest {
     }
 
     @Test
-    void the_two_tab_should_be_the_same(){
-        int[] testTab = {1,1,2,2,2};
-        assertEquals(testTab,square.racine(a,b));
+    void the_two_tab_should_be_the_same_size(){
+        assertEquals(5,aTester.length);
     }
+
     @Test
-    void the_two_tab_should_be_the_same(){
-        int[] testTab = {1,1,2,2,2};
-        assertEquals(testTab,this.tab);
+    void test(){
+        assertEquals(1,aTester[0]);
+        assertEquals(1,aTester[1]);
+        assertEquals(2,aTester[2]);
+        assertEquals(2,aTester[3]);
+        assertEquals(2,aTester[3]);
     }
 }
