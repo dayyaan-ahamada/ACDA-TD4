@@ -25,7 +25,7 @@ class SquareTest {
     }
 
     @Test
-    void the_two_tab_should_be(){
+    void the_two_tab_should_be_the_same(){
         int[] testTab = {1,1,2,2,2};
         assertEquals(testTab,this.tab);
     }
