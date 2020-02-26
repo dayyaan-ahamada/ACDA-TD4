@@ -8,10 +8,10 @@ public class App {
         }*/
 
         Matrice mat = new Matrice();
-        int[][] tab = mat.matrix(4, 5, 2, 6);
-        for (int i = 0; i < tab.length; i++) {
-            for (int j = 0; j < tab.length; j++) {
-                System.out.print(tab[i][j]);
+        int[][] tab = mat.matrix(3, 10, 2, 6);
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 10; j++) {
+                System.out.print(tab[i][j]+" ");
             }
             System.out.println();
         }
