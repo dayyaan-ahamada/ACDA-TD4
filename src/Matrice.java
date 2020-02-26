@@ -1,5 +1,3 @@
-import java.util.Random;
-
 public class Matrice {
 
     public int[][] matrix(int m, int n, int a, int b){
