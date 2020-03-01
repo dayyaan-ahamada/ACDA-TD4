@@ -8,10 +8,19 @@ class PalindromeTest {
     private Palindrome p = new Palindrome();
 
     @Test
-    void test(){
+    void phrase(){
         assertEquals(5,p.palindrome("aa keo kj sldl oo mlkklm kayak ij etyyte"));
+    }
+    @Test
+    void phrase_null() {
         assertEquals(0,p.palindrome(""));
-        assertEquals(2,p.palindrome("lll  ll"));//avec 2 espaces
-        assertEquals(2,p.palindrome("mm   mm"));//avec 3 espaces
+    }
+    @Test
+    void phrase_avec_2_espaces() {
+        assertEquals(2,p.palindrome("lll  ll"));
+    }
+    @Test
+    void phrase_avec_3_espaces() {
+        assertEquals(2,p.palindrome("mm   mm"));
     }
 }
