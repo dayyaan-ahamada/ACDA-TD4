@@ -7,13 +7,17 @@ public class App {
             System.out.println(tab[i]);
         }*/
 
-        Matrice mat = new Matrice();
+        /*Matrice mat = new Matrice();
         int[][] tab = mat.matrix(3, 10, 2, 6);
         for (int i = 0; i < 3; i++) {
             for (int j = 0; j < 10; j++) {
                 System.out.print(tab[i][j]+" ");
             }
             System.out.println();
-        }
+        }*/
+        /*Palindrome p = new Palindrome();
+        int i = p.palindrome("");
+        System.out.println(i);*/
+
     }
 }
